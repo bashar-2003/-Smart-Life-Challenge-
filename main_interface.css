@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-95deg,#2b432f,#5792a6,#383d63,#323f29);
+    background-size: 400% 400%;
+    padding: 82px 10px;
+    margin: 15px auto;
+    color:black;
+    border-radius:50px;
+    border:2.5px solid #6acb24;
+    direction:rtl;
+    animation: changecolorsback 8s alternate infinite ease-in-out;
+}
+@keyframes changecolorsback{
+    0%{background-position: 0% 50%;}
+    45%{background-position: 50% 100%;}
+    75%{background-position: 100% 50%;}
+    100%{background-position: 50% 0%;}
+}
+
+
+header{
+    width: 75%;
+    background: linear-gradient(+65deg,#4b8984,#4d817c);
+    background-size: 400% 400%;
+    padding: 20px 5px;
+    margin: 10px auto;
+    text-align: center;
+    border:3.2px solid #dae7e4;
+    border-radius: 30px;
+}
+
+.content{
+    width: 65%;
+    padding: 30px 10px;
+    margin: 10px auto;
+    text-align: right;
+    background: linear-gradient(-75deg,#06282e,transparent 15%,#76e3da,transparent 85%,#0c3648);
+    border-radius: 35px;
+    border:3.4px solid #073625;
+    color:#dae7e4;
+}
+
+ul{
+    padding-right: 50px;
+    list-style-position: inside;
+}
+
+h1{
+    color:#010b09;
+    font-size: 20px;
+    position:relative;
+    animation: movewords 6s alternate infinite ease;
+}
+
+@keyframes movewords {
+    0%{top:-15px;}
+    45%{padding-left: 30px;}
+    50%{padding-left:-50px;}
+    100%{top:-5px;}
+}
+
+image{
+    display:block;
+    margin:10px auto;
+    max-width: 100%;
+}
+
+button{
+    background: linear-gradient(+45deg,#083747,transparent 30%,#7aa9b8,#083747);
+    width: 80px;
+    height:35px;
+    display: inline-block;
+}
+
+label{
+    color:aliceblue;
+    display: block;
+    margin-right: 10px 0;
+    animation: colorchange 6s ease infinite;
+}
+@keyframes colorchange{
+    0%{color:#092604;}
+    45%{color:#e8eae1;}
+    75%{color:aquamarine;}
+    100%{color:black;}
+}
+
+section{
+    background-color: rgb(47, 109, 120);
+    display:block;
+    /* gap: 5px; */
+    grid-template-columns:repeat(auto-fit,min(210px,1fr));
+    padding: 12px  ;
+    max-width: 500;
+    margin:10px auto;
+    text-align: center;
+     border-radius: 80px;
+
+     border: 3.2px solid #031414;
+}
+
+footer{
+    width: 75%;
+    background: linear-gradient(+30deg,#204754,#78b2b8,#051d25);
+    text-align: center;
+    padding: 10px;
+    border-radius: 35px;
+    margin: 10px auto;
+    border:2.2px solid #edf3f3;
+}
